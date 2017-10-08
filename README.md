@@ -9,5 +9,3 @@ steps:
 - run main.py
 
 - output.html should have the newly generated table
-
-*note*: person's area needs to be added into input.py
