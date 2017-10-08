@@ -1,6 +1,7 @@
 # forToot
 
-python script to create html table, using same style as original table
+python script to create html table, using same style as original table.
+puts people in alphabetical order based on their last names, also inserts A - Z anchors.
 
 steps:
 
