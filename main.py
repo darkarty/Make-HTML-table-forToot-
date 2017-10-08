@@ -36,7 +36,7 @@ for person in peopleSorted:
 	# Check if need to insert anchor
 	firstLetterOfLastName = ord(person['lastname'][0])
 	if(firstLetterOfLastName != previousPersonLastNameFirstLetter):
-		
+
 		#need to add anchors from everything in between firstLetterOfLastName and previousPersonLastNameFirstLetter + 1
 		while(previousPersonLastNameFirstLetter != firstLetterOfLastName):
 			output.write('<a id = "' + chr(previousPersonLastNameFirstLetter + 1) + '">\n')
@@ -54,7 +54,7 @@ for person in peopleSorted:
 					previousPersonLastNameFirstLetter = previousPersonLastNameFirstLetter + 1
 
 	output.write('</span>\n</h3>\n')
-	output.write('<h5 style="padding-left: 30px;text-align: center"><span style="color: #000000"> '+"PERSON'S AREA" + '</span></h5>\n')
+	output.write('<h5 style="padding-left: 30px;text-align: center"><span style="color: #000000">' +  person['programName'] + '</span></h5>\n')
 	output.write('</td>\n')
 
 	count = count + 1;
