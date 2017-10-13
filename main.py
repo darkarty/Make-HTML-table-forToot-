@@ -39,7 +39,7 @@ for person in peopleSorted:
 
 		#need to add anchors from everything in between firstLetterOfLastName and previousPersonLastNameFirstLetter + 1
 		while(previousPersonLastNameFirstLetter != firstLetterOfLastName):
-			output.write('<a id = "' + chr(previousPersonLastNameFirstLetter + 1) + '">\n')
+			output.write('<a id = "' + chr(previousPersonLastNameFirstLetter + 1) + '"></a>\n')
 			previousPersonLastNameFirstLetter = previousPersonLastNameFirstLetter + 1
 
 		previousPersonLastNameFirstLetter = firstLetterOfLastName
