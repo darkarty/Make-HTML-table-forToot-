@@ -2,7 +2,7 @@
 
 python script to create html table, using same style as original table. 
 
-used for ubc legacy project interviewee page.
+for use on ubc legacy project interviewee page.
 
 puts people in alphabetical order based on their last names, and also inserts A - Z anchors.
 
