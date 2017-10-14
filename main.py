@@ -28,9 +28,7 @@ for person in peopleSorted:
 	output.write('<td style="background-color: #ffffff;border-color: #ffffff;width: 499px;height: 193px">\n')
 	output.write('<h3 style="padding-left: 60px;text-align: center">\n')
 	output.write('<span style="color: #000000">\n')
-	output.write('<a href="' + person['link'] + '">\n')
-	output.write('<img class="alignleft wp-image-735 size-full" src="' + person['profileHref'] + '" alt="' + person['lastname'] + person['firstname'] + '" width="156" height="156">' + person['lastname'] + ', ' + person['firstname'] + '</a>\n')
-	
+
 	# Insert anchors
 
 	# Check if need to insert anchor
@@ -52,6 +50,9 @@ for person in peopleSorted:
 				while(previousPersonLastNameFirstLetter < 90):
 					output.write('<a id = "' + chr(previousPersonLastNameFirstLetter + 1) + '"></a>\n')
 					previousPersonLastNameFirstLetter = previousPersonLastNameFirstLetter + 1
+
+	output.write('<a href="' + person['link'] + '">\n')
+	output.write('<img class="alignleft wp-image-735 size-full" src="' + person['profileHref'] + '" alt="' + person['lastname'] + person['firstname'] + '" width="156" height="156">' + person['lastname'] + ', ' + person['firstname'] + '</a>\n')
 
 	output.write('</span>\n</h3>\n')
 	output.write('<h5 style="padding-left: 30px;text-align: center"><span style="color: #000000">' +  person['programName'] + '</span></h5>\n')
