@@ -50,7 +50,7 @@ for person in peopleSorted:
 			if(previousPersonLastNameFirstLetter != 90):
 				#add anchors until Z
 				while(previousPersonLastNameFirstLetter < 90):
-					output.write('<a id = "' + chr(previousPersonLastNameFirstLetter + 1) + '">\n')
+					output.write('<a id = "' + chr(previousPersonLastNameFirstLetter + 1) + '"></a>\n')
 					previousPersonLastNameFirstLetter = previousPersonLastNameFirstLetter + 1
 
 	output.write('</span>\n</h3>\n')
