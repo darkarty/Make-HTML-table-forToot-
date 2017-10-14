@@ -37,7 +37,7 @@ for person in peopleSorted:
 
 		#need to add anchors from everything in between firstLetterOfLastName and previousPersonLastNameFirstLetter + 1
 		while(previousPersonLastNameFirstLetter != firstLetterOfLastName):
-			output.write('<a id = "' + chr(previousPersonLastNameFirstLetter + 1) + '"></a>\n')
+			output.write('<a id = "' + chr(previousPersonLastNameFirstLetter + 1) + '"></a>')
 			previousPersonLastNameFirstLetter = previousPersonLastNameFirstLetter + 1
 
 		previousPersonLastNameFirstLetter = firstLetterOfLastName
@@ -48,7 +48,7 @@ for person in peopleSorted:
 			if(previousPersonLastNameFirstLetter != 90):
 				#add anchors until Z
 				while(previousPersonLastNameFirstLetter < 90):
-					output.write('<a id = "' + chr(previousPersonLastNameFirstLetter + 1) + '"></a>\n')
+					output.write('<a id = "' + chr(previousPersonLastNameFirstLetter + 1) + '"></a>')
 					previousPersonLastNameFirstLetter = previousPersonLastNameFirstLetter + 1
 
 	output.write('<a href="' + person['link'] + '">\n')
