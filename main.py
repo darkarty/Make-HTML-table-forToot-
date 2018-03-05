@@ -51,7 +51,7 @@ for person in peopleSorted:
 					output.write('<a id = "' + chr(previousPersonLastNameFirstLetter + 1) + '"></a>')
 					previousPersonLastNameFirstLetter = previousPersonLastNameFirstLetter + 1
 
-	output.write('<a href="' + person['link'] + '">\n')
+	output.write('<a href="' + person['link'] + '" target="_blank">\n')
 	output.write('<img class="alignleft wp-image-735 size-full" src="' + person['profileHref'] + '" alt="' + person['lastname'] + person['firstname'] + '" width="156" height="156">' + person['lastname'] + ', ' + person['firstname'] + '</a>\n')
 
 	output.write('</span>\n</h3>\n')
