@@ -1,7 +1,7 @@
 from input import peopleObjects;
 
 # Open/write to output.html
-output = open("output.html","w")
+output = open("output.html", "w")
 
 # Assign list of dicts to people
 people = peopleObjects();
@@ -16,7 +16,7 @@ count = 0
 previousPersonLastNameFirstLetter = 64
 
 # Write html table
-output.write('<table style="height: 498px;border-color: #ffffff;width: 1037px" border="0" cellspacing="10" cellpadding="15">\n')
+output.write('<table style="height: 498px;border-color: #ffffff;width: 1037px" border="0" cellspacing="10" cellpadding="15" align="center">\n')
 output.write('<tbody>\n')
 
 for person in peopleSorted:
@@ -52,7 +52,8 @@ for person in peopleSorted:
 					previousPersonLastNameFirstLetter = previousPersonLastNameFirstLetter + 1
 
 	output.write('<a href="' + person['link'] + '" target="_blank">\n')
-	output.write('<img class="alignleft wp-image-735 size-full" src="' + person['profileHref'] + '" alt="' + person['lastname'] + person['firstname'] + '" width="156" height="156">' + person['lastname'] + ', ' + person['firstname'] + '</a>\n')
+	output.write('<img class="alignleft wp-image-735 size-full" src="' + person['profileHref'] + '" alt="' + person['lastname'] + person['firstname'] + '" width="156" height="156"></a>\n')
+	output.write('<a href="' + person['biolink'] + '">' +  person['lastname'] + ', ' + person['firstname']+ '</a>\n')
 
 	output.write('</span>\n</h3>\n')
 	output.write('<h5 style="padding-left: 30px;text-align: center"><span style="color: #000000">' +  person['programName'] + '</span></h5>\n')
